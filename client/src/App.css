@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap');
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+html, body {
+  width: 100%;
+  height:100%;
+}
+body {
+  background: linear-gradient(-45deg, #195f36e7, #32d6a5cc, #2177beb6, #014f8fb6);
+  background-size: 400% 400%;
+  animation: gradient 120s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 55%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.nav{
+  height: 70px;
+  width: 100%;
+  border-radius:  0px 0px 25px 25px;
+  background: linear-gradient(135deg, #68d4ff7c 10%, rgba(36, 59, 129, 0.486) 90%);
+  /* background-size: 1000% 1000%;
+  animation: gradient 30s ease infinite; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.recipe{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lightgrey;
+  border: 2px solid gray;
+  margin: 5px;
+}
+
+.logopic{
+  height: 200px;
+  width: 200px;
+}
+
+
+.linkText{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  margin-right: 30px;
+  text-shadow: 3px 3px 2px #1401017e;
+}
+
+.linkText:hover{
+  color:rgb(197, 209, 221)
+
+}
+
+/* create recipe */
+
+.recipeForm{
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  font-weight:500;
+  color:white;
+  text-shadow: 2px 2px 2px #1401017e;
+}
+
+
+.create-labels{
+  margin-bottom: 5px;
+}
+
+.input-label{
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.274);
+  border: white;
+}
+
+#carbCount{
+  width: 80px;
+}
+#proteinCount{
+  width: 80px;
+}
+#fatCount{
+  width: 80px;
+}
